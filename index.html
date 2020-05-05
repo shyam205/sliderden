@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Swiper tesimonials</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="swiper.min.css">
+</head>
+<style>
+  
+</style>
+<body>
+ 
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div>
+          <div id="image">
+        <img src="images/sliderimage.jpg">
+        </div>
+          <div class="content">
+            <div class="card">
+        <p>ipsum dolor sit amet, consectetur adipisicing elit, sed do proident id est laborum.</p>
+        <a href="#" class="btn">Read more</a>
+        </div>
+      </div>
+      </div>
+      </div>
+  
+      <div class="swiper-slide">
+        <div>
+          <div id="image">
+        <img src="images/sliderimage.jpg">
+      </div>
+          <div class="content">
+            <div class="card">
+        <p>ipsum dolor sit amet, consectetur adipisicing elit, sed do proident id est laborum.</p>
+        <a href="#" class="btn">Read more</a>
+        </div>
+      </div>
+      </div>
+      </div>
+      
+      <div class="swiper-slide">
+        <div>
+          <div id="image">
+        <img src="images/sliderimage.jpg">
+      </div>
+          <div class="content">
+            <div class="card">
+        <p>ipsum dolor sit amet, consectetur adipisicing elit, sed do proident id est laborum.</p>
+        <a href="#" class="btn">Read more</a>
+        </div>
+      </div>
+      </div>
+      </div>
+      
+       <div class="swiper-slide">
+        <div>
+          <div id="image">
+        <img src="images/sliderimage.jpg">
+      </div>
+          <div class="content">
+            <div class="card">
+        <p>ipsum dolor sit amet, consectetur adipisicing elit, sed do proident id est laborum.</p>
+        <a href="#" class="btn">Read more</a>
+        </div>
+      </div>
+      </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div>
+          <div id="image">
+        <img src="images/sliderimage.jpg">
+      </div>
+          <div class="content">
+            <div class="card">
+        <p>ipsum dolor sit amet, consectetur adipisicing elit, sed do proident id est laborum.</p>
+        <a href="#" class="btn">Read more</a>
+        </div>
+      </div>
+      </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div>
+          <div id="image">
+        <img src="images/sliderimage.jpg">
+      </div>
+          <div class="content">
+            <div class="card">
+        <p>ipsum dolor sit amet, consectetur adipisicing elit, sed do proident id est laborum.</p>
+        <a href="#" class="btn">Read more</a>
+        </div>
+      </div>
+      </div>
+      </div>
+
+
+
+
+      </div>
+    </div>
+   
+    <div class="swiper-pagination"></div>
+  </div>
+  <script src="swiper.min.js"></script>
+
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      autoplay:true,
+      loop: true,
+       freeMode: true,
+      // init: false,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      breakpoints: {
+        480: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 50,
+        },
+      }
+
+    });
+
+     
+      swiper.el.addEventListener("mouseenter", function( event ) {   
+      swiper.autoplay.stop();
+     },false);
+
+      swiper.el.addEventListener("mouseleave", function( event ) {   
+      swiper.autoplay.start();
+     },false);
+  
+  </script>
+</body>
+</html>
